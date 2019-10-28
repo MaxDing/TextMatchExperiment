@@ -1,0 +1,8 @@
+['促性腺激素GH和PRL缺乏', '软组织钙化', '持续性持续性心律失常', '集落', '病变活动', '骨髓造血功能衰竭性贫血', 'appatentmineralocorticoidexcess', '体温可达39℃以上', '泪腺功能不全', '尿道膨出']
+--------------------------------
+TextMatch  :	disease_len:0,	symptom_len:0
+KBConventer:	disease_len:1355,	symptom_len:2717
+--------------------------------
+G:4072	D:0
+J:0.000000
+Fg:0.000000	Fd:-1.000000

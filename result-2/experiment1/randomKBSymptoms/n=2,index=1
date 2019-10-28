@@ -1,0 +1,8 @@
+['肢体软弱乏力', 'latentautoimmunediabetesinadults']
+--------------------------------
+TextMatch  :	disease_len:0,	symptom_len:0
+KBConventer:	disease_len:2,	symptom_len:1
+--------------------------------
+G:3	D:0
+J:0.000000
+Fg:0.000000	Fd:-1.000000

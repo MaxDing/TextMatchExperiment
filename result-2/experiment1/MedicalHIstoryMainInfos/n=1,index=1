@@ -1,0 +1,8 @@
+['乏力', '光过敏']
+--------------------------------
+TextMatch  :	disease_len:7,	symptom_len:21
+KBConventer:	disease_len:1438,	symptom_len:2994
+--------------------------------
+G:4432	D:28
+J:0.004505
+Fg:0.004513	Fd:0.714286

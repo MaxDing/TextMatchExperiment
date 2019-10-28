@@ -1,8 +1,0 @@
-['头部外伤']
---------------------------------
-TextMatch  :	disease_len:44,	symptom_len:67
-KBConventer:	disease_len:0,	symptom_len:0
---------------------------------
-G:0	D:109
-J:0.000000
-Fg:-1.000000	Fd:0.000000

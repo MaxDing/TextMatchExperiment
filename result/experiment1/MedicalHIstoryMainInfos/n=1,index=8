@@ -1,8 +1,0 @@
-['声嘶']
---------------------------------
-TextMatch  :	disease_len:87,	symptom_len:101
-KBConventer:	disease_len:0,	symptom_len:0
---------------------------------
-G:0	D:184
-J:0.000000
-Fg:-1.000000	Fd:0.000000

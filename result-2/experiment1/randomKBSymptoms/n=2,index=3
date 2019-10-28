@@ -1,0 +1,8 @@
+['蛋白激酶C途径激活', '隐痛胸部剧痛']
+--------------------------------
+TextMatch  :	disease_len:0,	symptom_len:0
+KBConventer:	disease_len:9,	symptom_len:16
+--------------------------------
+G:25	D:0
+J:0.000000
+Fg:0.000000	Fd:-1.000000

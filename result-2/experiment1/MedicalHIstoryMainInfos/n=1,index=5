@@ -1,0 +1,8 @@
+['停经', '下腹痛', '阴道出血']
+--------------------------------
+TextMatch  :	disease_len:0,	symptom_len:0
+KBConventer:	disease_len:17,	symptom_len:24
+--------------------------------
+G:41	D:0
+J:0.000000
+Fg:0.000000	Fd:-1.000000

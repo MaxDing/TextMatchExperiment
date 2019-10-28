@@ -37,15 +37,12 @@ def syncRandomSymptoms():
 #syncRandomSymptoms()
 
 
-def getMedicalHistoryMaininfo(k=10):
-    data_source_path = '/home/maxding/TextMatchExperiment/data/sourceData/100份病历结构化结果与源文件'
+def getMedicalHistoryMaininfo():
+    data_source_path = '/home/maxding/TextMatchExperiment/data/sourceData/挑选的病历'
     data_dest_path = '/home/maxding/TextMatchExperiment/data/sourceData/medicalhistory_maininfo'
     index = 1
     for filename in glob.glob(data_source_path+'/*txt'):
         print(filename)
-        if index > k:
-            break
-       
         f = open(filename,'r')
         lines = f.readlines()
         maininfo_line = lines[1]
@@ -60,32 +57,35 @@ def getMedicalHistoryMaininfo(k=10):
             f.write('\n')
         index += 1
 
-def getMedicalHistoryDiseaseHistory(k=10):
-    data_source_path = '/home/maxding/TextMatchExperiment/data/sourceData/100份病历结构化结果与源文件'
+getMedicalHistoryMaininfo()
+
+def getMedicalHistoryDiseaseHistory():
+    data_source_path = '/home/maxding/TextMatchExperiment/data/sourceData/挑选的病历'
     data_dest_path = '/home/maxding/TextMatchExperiment/data/sourceData/medicalhistory_diseasehistory'
     index = 1
     for filename in glob.glob(data_source_path+'/*txt'):
-        print(filename)
-        if index > k:
-            break
-       
+        print(filename)       
         f = open(filename,'r')
         lines = f.readlines()
         maininfo_line = lines[1]
         disease_history_line = lines[3]
         maininfo_line = maininfo_line.strip('\n')
+        maininfo_line = maininfo_line.strip('\t')
         main_info_list = maininfo_line.split('\t')
         disease_history_line = disease_history_line.strip('\n')
+        disease_history_line = disease_history_line.strip('\t')
         disease_history_list = disease_history_line.split('\t')
         print(main_info_list,disease_history_list)
         main_info_list = [main_info.split('(')[0] for main_info in main_info_list]
         disease_history_ret_list = []
         for disease_history in disease_history_list:
             disease_history_entity = disease_history.split('(')[0]
+            print(disease_history_entity)
             disease_history_value = int(disease_history.split('(')[1][0])
+            
             if disease_history_value == 1:
                 disease_history_ret_list.append(disease_history_entity)
-            print(disease_history_entity,disease_history_value)
+            #print(disease_history_entity,disease_history_value)
         print(main_info_list,disease_history_ret_list)
         f = open(data_dest_path+'/'+str(index),'w+')
         for main_info in main_info_list:
@@ -97,6 +97,50 @@ def getMedicalHistoryDiseaseHistory(k=10):
         index += 1
 
 getMedicalHistoryDiseaseHistory()
+def getMedicalHistoryDiseaseHistoryWithNegative():
+    data_source_path = '/home/maxding/TextMatchExperiment/data/sourceData/挑选的病历'
+    data_dest_path = '/home/maxding/TextMatchExperiment/data/sourceData/medicalhistory_diseasehistory(with negative)'
+    index = 1
+    for filename in glob.glob(data_source_path+'/*txt'):
+        print(filename)      
+        f = open(filename,'r')
+        lines = f.readlines()
+        maininfo_line = lines[1]
+        disease_history_line = lines[3]
+        maininfo_line = maininfo_line.strip('\n')
+        maininfo_line = maininfo_line.strip('\t')
+        main_info_list = maininfo_line.split('\t')
+        disease_history_line = disease_history_line.strip('\n')
+        disease_history_line = disease_history_line.strip('\t')
+        disease_history_list = disease_history_line.split('\t')
+        print(main_info_list,disease_history_list)
+        main_info_list = [main_info.split('(')[0] for main_info in main_info_list]
+        f = open(data_dest_path+'/'+str(index),'w+')
+        for main_info in main_info_list:
+            f.write(main_info)
+            f.write('\t')
+        f.write('\n')
+        disease_history_postive_list = []
+        disease_history_negative_list = []
+        for disease_history in disease_history_list:
+            disease_history_entity = disease_history.split('(')[0]
+            disease_history_value = int(disease_history.split('(')[1][0])
+            if disease_history_value == 1:
+                disease_history_postive_list.append(disease_history_entity)
+            else:
+                disease_history_negative_list.append(disease_history_entity)
+        
+        for disease_history_entity in disease_history_postive_list:
+            f.write(disease_history_entity)
+            f.write('\t')
+        f.write('\n')
+        for disease_history_entity in disease_history_negative_list:
+            f.write(disease_history_entity)
+            f.write('\t')
+        f.write('\n')
+        index += 1
+
+getMedicalHistoryDiseaseHistoryWithNegative()
 # body = {
 #     "query": {
 #         "bool":{

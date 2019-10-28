@@ -1,0 +1,8 @@
+['articulargelling', '先兆子痫', '痛风肾脏病变', '钠吸收障碍']
+--------------------------------
+TextMatch  :	disease_len:0,	symptom_len:0
+KBConventer:	disease_len:1459,	symptom_len:3030
+--------------------------------
+G:4489	D:0
+J:0.000000
+Fg:0.000000	Fd:-1.000000
