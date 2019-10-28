@@ -1,0 +1,8 @@
+['腋下受累', '室壁可增厚']
+--------------------------------
+TextMatch  :	disease_len:7,	symptom_len:10
+KBConventer:	disease_len:1,	symptom_len:0
+--------------------------------
+G:1	D:17
+J:0.000000
+Fg:0.000000	Fd:0.000000

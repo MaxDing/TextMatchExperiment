@@ -1,0 +1,8 @@
+['胸导联过渡区左移', 'DM']
+--------------------------------
+TextMatch  :	disease_len:59,	symptom_len:96
+KBConventer:	disease_len:1341,	symptom_len:3084
+--------------------------------
+G:4425	D:153
+J:0.010596
+Fg:0.010847	Fd:0.313725

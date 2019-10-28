@@ -1,0 +1,8 @@
+['发作性晕厥']
+--------------------------------
+TextMatch  :	disease_len:35,	symptom_len:76
+KBConventer:	disease_len:0,	symptom_len:0
+--------------------------------
+G:0	D:110
+J:0.000000
+Fg:-1.000000	Fd:0.000000

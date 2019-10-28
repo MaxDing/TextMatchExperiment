@@ -1,0 +1,8 @@
+['哑铃型阴影', '上皮细胞钠通道异形']
+--------------------------------
+TextMatch  :	disease_len:46,	symptom_len:53
+KBConventer:	disease_len:2,	symptom_len:3
+--------------------------------
+G:5	D:98
+J:0.000000
+Fg:0.000000	Fd:0.000000

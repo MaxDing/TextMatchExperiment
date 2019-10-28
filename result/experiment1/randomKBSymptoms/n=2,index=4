@@ -1,0 +1,8 @@
+['膀胱容量增大', '足底筋膜压痛']
+--------------------------------
+TextMatch  :	disease_len:5,	symptom_len:15
+KBConventer:	disease_len:8,	symptom_len:18
+--------------------------------
+G:26	D:20
+J:0.022222
+Fg:0.038462	Fd:0.050000
