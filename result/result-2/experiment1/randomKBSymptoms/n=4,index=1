@@ -1,8 +1,8 @@
-['30岁以下单侧肾2个囊肿', '脑震荡']
+['控制不好心衰', '意识不清状态', '胡须稀少', '血浆渗透压抬高']
 --------------------------------
 TextMatch  :	disease_len:0,	symptom_len:0
-KBConventer:	disease_len:1363,	symptom_len:2740
+KBConventer:	disease_len:4,	symptom_len:12
 --------------------------------
-G:4103	D:0
+G:16	D:0
 J:0.000000
 Fg:0.000000	Fd:-1.000000

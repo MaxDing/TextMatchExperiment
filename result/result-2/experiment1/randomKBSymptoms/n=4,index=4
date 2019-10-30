@@ -1,8 +1,8 @@
-['articulargelling', '先兆子痫', '痛风肾脏病变', '钠吸收障碍']
+['游走性关节炎期', '入睡困难', '体温可达39℃以上', '囊肿破裂出血']
 --------------------------------
 TextMatch  :	disease_len:0,	symptom_len:0
-KBConventer:	disease_len:1459,	symptom_len:3030
+KBConventer:	disease_len:2,	symptom_len:4
 --------------------------------
-G:4489	D:0
+G:6	D:0
 J:0.000000
 Fg:0.000000	Fd:-1.000000

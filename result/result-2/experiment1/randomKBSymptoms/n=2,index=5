@@ -1,8 +1,8 @@
-['呼吸深长', '进行性肾功能恶化']
+['腋下受累', '室壁可增厚']
 --------------------------------
 TextMatch  :	disease_len:0,	symptom_len:0
-KBConventer:	disease_len:7,	symptom_len:8
+KBConventer:	disease_len:1,	symptom_len:0
 --------------------------------
-G:15	D:0
+G:1	D:0
 J:0.000000
 Fg:0.000000	Fd:-1.000000

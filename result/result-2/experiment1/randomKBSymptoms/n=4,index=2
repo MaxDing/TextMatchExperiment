@@ -1,8 +1,8 @@
-['肢体软弱乏力', 'latentautoimmunediabetesinadults']
+['GD', '紧箍感头痛', '头胀', '出血量大']
 --------------------------------
 TextMatch  :	disease_len:0,	symptom_len:0
-KBConventer:	disease_len:2,	symptom_len:1
+KBConventer:	disease_len:1345,	symptom_len:2733
 --------------------------------
-G:3	D:0
+G:4078	D:0
 J:0.000000
 Fg:0.000000	Fd:-1.000000

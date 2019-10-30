@@ -1,8 +1,8 @@
-['绞锁现象', '月经期头痛']
+['怒张', '肾小管腔内大量蛋白管型', '回流量增多', '呼吸抑制']
 --------------------------------
 TextMatch  :	disease_len:0,	symptom_len:0
-KBConventer:	disease_len:1335,	symptom_len:2673
+KBConventer:	disease_len:1337,	symptom_len:2690
 --------------------------------
-G:4008	D:0
+G:4027	D:0
 J:0.000000
 Fg:0.000000	Fd:-1.000000
