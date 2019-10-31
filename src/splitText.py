@@ -2,8 +2,8 @@
 import re
 from lxml import etree
 
-data_file_path_nkx = "/home/maxding/TextMatchExperiment/data/内科学.html"
-data_file_path_zdx = "/home/maxding/TextMatchExperiment/data/诊断学.html"
+data_file_path_nkx = "/home/maxding/TextMatchExperiment/data/sourceData/内科学.html"
+data_file_path_zdx = "/home/maxding/TextMatchExperiment/data/sourceData/诊断学.html"
 
 def parse_nkx():
     with open(data_file_path_nkx,'r+',encoding='utf-8') as f:
@@ -66,7 +66,7 @@ def parse_nkx():
                         paragraph_context_str = etree.tostring(paragraph_context_h[0], encoding = "utf-8", pretty_print = True,method='text').decode('utf-8')       
                         paragraph_context_str = paragraph_context_str.strip('\n')
                         paragraph_context_str = paragraph_title_str+'\n'+paragraph_context_str
-                        ff = open('/home/maxding/TextMatchExperiment/data/splitText/nkx/'+article_title_str+'|'+chapter_title_str+'|'+section_title_str+'|'+paragraph_title_str,'w+')
+                        ff = open('/home/maxding/TextMatchExperiment/data/splitText/nkx/'+article_title_str+'_'+chapter_title_str+'_'+section_title_str+'_'+paragraph_title_str,'w+')
                         ff.write(paragraph_context_str)
 
 def parse_zdx():
@@ -106,8 +106,8 @@ def parse_zdx():
                 paragraph_context_str = etree.tostring(paragraph_context_h[0], encoding = "utf-8", pretty_print = True,method='text').decode('utf-8')       
                 paragraph_context_str = paragraph_context_str.strip('\n')
                 paragraph_context_str = paragraph_title_str+'\n'+paragraph_context_str
-                ff = open('/home/maxding/TextMatchExperiment/data/splitText/zdx/'+article_title_str+'|'+chapter_title_str+'|'+section_title_str+'|'+paragraph_title_str,'w+')
+                ff = open('/home/maxding/TextMatchExperiment/data/splitText/zdx/'+article_title_str+'_'+chapter_title_str+'_'+section_title_str+'_'+paragraph_title_str,'w+')
                 ff.write(paragraph_context_str)
 
-
-parse_nkx()  
+parse_nkx()
+parse_zdx()  
